@@ -42,6 +42,62 @@ function theNews() {
         
         // Call the function to fetch and display news when the page loads
         document.addEventListener('DOMContentLoaded', theNews);
-        
 
-        
+        /// YOUTUBE API ////
+
+
+// Function to fetch and display top news videos from YouTube API for the United Kingdom
+function youtubeTopNews() {
+    const apiKey = 'AIzaSyC_tKRza1ww4mQ7638dISKGj6MpGPz2LkA';
+    const apiUrl = 'https://www.googleapis.com/youtube/v3/search';
+
+    // the parameters for the API request
+    const params = {
+        part: 'snippet',
+        chart: 'mostPopular',
+        regionCode: 'GB',
+        videoCategoryId: '25', // the video category ID for News & Politics. ref of the catagory numbers : https://stackoverflow.com/a/35877512
+        maxResults: 5, // this retrieves a max of 5 vids
+        key: apiKey,
+      };
+
+    // the URL with query parameters
+    const url = `${apiUrl}?${Object.entries(params).map(([key, value]) => `${key}=${value}`).join('&')}`;
+
+    // this is to fetch data from YouTube API
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            // accesses the items array in the response data
+            const videos = data.items;
+
+            // Looping through each video to log the title and description to the console
+            videos.forEach(video => {
+                console.log('Video Title:', video.snippet.title);
+                console.log('Video Description:', video.snippet.description);
+                console.log('-------------------------');
+
+                // Creates a div element for each video
+                const videoDiv = document.createElement('div');
+                videoDiv.classList.add('video');
+
+                // this is to create an iframe element for embedding the video
+                const iframeElement = document.createElement('iframe');
+                iframeElement.src = `https://www.youtube.com/embed/${video.id.videoId}`;
+                iframeElement.title = video.snippet.title;
+
+                // appends the iframe element to the video div (I might have to chnage this an the videoDiv later)
+                videoDiv.appendChild(iframeElement);
+
+                // this appends the video div to the video container in the HTML
+                document.getElementById('video-container').appendChild(videoDiv);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching and displaying YouTube videos:', error);
+        });
+}
+
+// Calls the function to fetch and display YouTube top news videos when the page loads
+document.addEventListener('DOMContentLoaded', youtubeTopNews);
+
