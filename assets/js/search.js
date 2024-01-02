@@ -1,4 +1,5 @@
 // js code for the search function
+
 function performSearch(query) {
     // clear previous results
     clearResults();
