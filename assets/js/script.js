@@ -12,7 +12,9 @@ $(document).ready(function () {
         saveSearchToLocalStorage(searchTerm); // Save search term to local storage
         loadSearchHistory(); // Reload and display updated search history
       } else {
-        alert('Please enter a search term!');
+        // NEW ADDITION: Use modal to show the alert : when a user tries to submit the search form without entering a search term, 
+        //the modal dialog labeled "Alert" will be displayed, showing the message "Please enter a search term!"
+        $('#alertModal').modal('show');
       }
     });
   
