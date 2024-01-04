@@ -53,6 +53,7 @@ TrendTube is a web application designed for news exploration, providing users wi
  https://mykulcoding.github.io/TrendTube/
 
 ## Website Image
+![Web_Screenshot](https://github.com/Mykulcoding/TrendTube/assets/147704782/9849ce00-76d4-4d9d-a577-f66d3ac92f87)
 
 ---
 Note to the grader: 
