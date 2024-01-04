@@ -6,9 +6,6 @@ body {
 .navbar {
     padding: 1rem;
 }
-.navbar a {
-    color: #fff;
-}
 /* Style for the cards */
 .card {
     background-color: #F8F9FA;
