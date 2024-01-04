@@ -49,14 +49,16 @@ TrendTube is a web application designed for news exploration, providing users wi
 - [Michael Adjei](https://github.com/Mykulcoding)
 - [Daniel Notice](https://github.com/DanielVNotice)
 
-## Note to grader
-The News API doesn't work if it is not from localhost because its blocked by cors on the API server side unless it is paid for. So because of this when you search on the deployed website link, the News information is not being displayed. However, when you load website using the HTML on VSCode, it displays the below screenshot.
+## Note to Grader
+The News API doesn't work if it is not from localhost because it is blocked by cors on the API server side unless it is paid for. So because of this when you search on the deployed website link, the News information is not being displayed. However, when you load website using the HTML on VSCode, it displays the below screenshot.
 
 ## Website link
  https://mykulcoding.github.io/TrendTube/
 
 ## Website Image 
 ![Web_Screenshot](https://github.com/Mykulcoding/TrendTube/assets/147704782/9849ce00-76d4-4d9d-a577-f66d3ac92f87)
+![Web_Screenshot2](https://github.com/Mykulcoding/TrendTube/assets/147704782/9df66761-0faa-4359-91f9-51a67a21f803)
+![Web_Screenshot 3](https://github.com/Mykulcoding/TrendTube/assets/147704782/b7c38af4-4c6a-41e1-9ced-080f6bde1a8c)
 
 ---
 This ReadMe and the presentation was written by by Daniela Mendes Penelas De Moura. 
