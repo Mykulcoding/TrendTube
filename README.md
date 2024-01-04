@@ -49,7 +49,10 @@ TrendTube is a web application designed for news exploration, providing users wi
 - [Michael Adjei](https://github.com/Mykulcoding)
 - [Daniel Notice](https://github.com/DanielVNotice)
 
+## Website link
+ https://mykulcoding.github.io/TrendTube/
 
+## Website Image
 
 ---
 Note to the grader: 
