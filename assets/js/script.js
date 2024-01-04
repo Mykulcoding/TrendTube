@@ -90,7 +90,7 @@ $(document).ready(function () {
     }
     
   
-  
+    //Restructured JS to allow us style page with video ---------------------------
     function fetchYouTubeVideo(searchTerm) {
       const youtubeApiKey = 'AIzaSyC_tKRza1ww4mQ7638dISKGj6MpGPz2LkA';
       const maxResults = 2;
@@ -103,14 +103,14 @@ $(document).ready(function () {
           if (response.items.length > 0) {
             const videoId1 = response.items[0].id.videoId;
             const videoUrl1 = `https://www.youtube.com/embed/${videoId1}`;
-            const videoElement1 = `<iframe width="560" height="315" src="${videoUrl1}" frameborder="0" allowfullscreen></iframe>`;
+            const videoElement1 =  `<iframe src="${videoUrl1}" class="embed-responsive-item responsive-iframe" frameborder="0" allowfullscreen></iframe>`;
             $('#card3VideoPlaceholder').html(videoElement1);
             console.log('Video URL 1:', videoUrl1);
   
             if (response.items.length > 1) {
               const videoId2 = response.items[1].id.videoId;
               const videoUrl2 = `https://www.youtube.com/embed/${videoId2}`;
-              const videoElement2 = `<iframe width="560" height="315" src="${videoUrl2}" frameborder="0" allowfullscreen></iframe>`;
+              const videoElement2 = `<iframe src="${videoUrl2}" class="embed-responsive-item responsive-iframe" frameborder="0" allowfullscreen></iframe>`;
               $('#card4VideoPlaceholder').html(videoElement2);
               console.log('Video URL 2:', videoUrl2);
             } else {
