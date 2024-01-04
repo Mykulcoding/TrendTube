@@ -1,12 +1,15 @@
+/* Style for the body */
 body {
     font-family: 'Arial', sans-serif;
 }
+/* Style for the navbar */
 .navbar {
     padding: 1rem;
 }
 .navbar a {
     color: #fff;
 }
+/* Style for the cards */
 .card {
     background-color: #F8F9FA;
     border: 1px solid #DEE2E6;
@@ -18,11 +21,15 @@ body {
     transform: scale(1.05);
     color: #007BFF;
 }
+
+/* Style for the footer */
 .footer {
     background-color: #343A40;
     color: #fff;
     padding: 1rem;
 }
+
+/* Style for the buttons */
 .btn-dark {
     background-color: #00050a;
     border-color: #007BFF;
@@ -32,7 +39,7 @@ body {
     border-color: #0056B3;
 }
 
-
+/* Style for iframe for the video to be responsive */
  .responsive-iframe {
     position: absolute;
     top: 0;
@@ -41,6 +48,7 @@ body {
     height: 100%;
 }
 
+/* Style for iframe for the video to be responsive */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
@@ -48,5 +56,5 @@ body {
     overflow: hidden;
     margin: 0 auto; 
     max-width: 100% !important; 
-
+}
 
